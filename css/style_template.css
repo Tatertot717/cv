@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-optical-sizing: auto;
+    font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
+    margin: 0%;
+    background-color: #78C0E0;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #449DD1;
+    display: flex;
+    justify-content: space-around;
+    border: #3943B7;
+    border-style:ridge;
+}
+
+nav p, nav a {
+    font-size:130%;
+}
+
+nav a {
+    font-size: 100%;
+    color: #0E0E52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #150578;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #449DD1;
+    display: flex;
+    justify-content: center;
+    border: #3943B7;
+    border-style:ridge;
+}
+
+footer a {
+    font-size:130%;
+    margin: 10px;
+    color: #0E0E52;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #150578;
+}
+
+/* Splash Section */
+.splash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-style: none;
+}
+
+.splash section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.splash h1 {
+    font-family: "Playwrite IN", Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex: 1 1 100%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.splash img {
+    justify-self: center;
+    min-width: 15em;
+    max-width: 20%;
+    border-radius: 10%;
+    border-color: #3943B7;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.splash div { /* added to make the column expand*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.splash p {
+    margin: 5%;
+    text-align: center;
+    font-size: large;
+}
+
+@media (max-width: 600px) {
+    .splash p {
+        font-size: small;
+    }
+}
+
+/* Horizontal Rules */
+hr {
+    border-color: #3943B7;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Sections */
+section {
+    margin: 1%;;
+    border-color: black;
+    border-style: dotted;
+    border-width: 1px;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Section Headings */
+section h2 {
+    font-weight: bold;
+    font-size: larger;
+    justify-content: left;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+/* Paragraph Styles */
+section p {
+    text-align: left;
+    margin: 1em;
+}
+
+/* link styles */
+section a {
+    color: #0E0E52;
+    text-decoration: none;
+    font-weight: bold;
+}
+section a:hover {
+    text-decoration: none;
+    color: #150578;
+}
+
+/* List Styles */
+ul {
+    padding-left: 0; 
+}
+ul li{
+    list-style-position: inside;
+    margin: .5em;
+}
+
+dl {
+    margin: .5em;
+    text-decoration: none;
+
+}
+dl dt{
+    margin: .5em;
+    text-decoration: none;
+
+}
+dl dd{
+    margin: .5em;
+    margin-left: 2em;
+    text-decoration: none;
+
+}
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template: 1fr 4fr/ 1fr 1fr 1fr;
+}
+
+.card {
+    margin: 3%;
+    border-color: black;
+    border-style: dotted;
+    border-width: 1px;
+    text-align: center;
+}
+
+.card img {
+    min-width: 15em;
+    max-width: 20%;
+    border-color: #3943B7;
+    border-style: none;
+    border-width: 1px;
+}
+
+.title {
+    text-decoration: underline;
+    border-style: none;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / 4;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+/* Contact Page Styles */
+.one-col {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-items: center;
+    gap: 1em;
+}
+
+form {
+    background-color: #449DD1;
+    padding: 10%;
+    margin: 2%;;
+    text-align: center;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    background-color: white;
+    text-align: left;
+    font-weight: normal;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #f1f1f1;
+    text-align: left;
+    font-weight: normal;
+}
+
+form button {
+    background-color: #150578;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #3943B7;
+}
