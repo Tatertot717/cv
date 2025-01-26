@@ -133,6 +133,8 @@ section h2 {
     justify-content: left;
     margin: 10px;
     text-decoration: underline;
+    font-family: "Roboto", Georgia, 'Times New Roman', Times, serif;
+    color: #0E0E52;
 }
 
 /* Paragraph Styles */
